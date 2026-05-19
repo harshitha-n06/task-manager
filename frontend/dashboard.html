@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo-section">
+            <i class="fa-solid fa-list-check"></i>
+            <h1>TaskFlow</h1>
+        </div>
+
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Left Panel -->
+        <div class="left-panel">
+
+            <!-- Welcome Card -->
+            <div class="welcome-card">
+
+                <h2>Hello 👋</h2>
+
+                <p>
+                    Organize your tasks efficiently and stay productive.
+                </p>
+
+            </div>
+
+            <!-- Add Task Form -->
+            <div class="task-form-card">
+
+                <h2>Add New Task</h2>
+
+                <form id="taskForm">
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter task title"
+                        required
+                    >
+
+                    <textarea
+                        id="description"
+                        placeholder="Enter task description"
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Task
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+
+            <!-- Header -->
+            <div class="task-header">
+
+                <h2>Your Tasks</h2>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search tasks..."
+                >
+
+            </div>
+
+            <!-- Task Grid -->
+            <div class="task-grid" id="taskGrid"></div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
