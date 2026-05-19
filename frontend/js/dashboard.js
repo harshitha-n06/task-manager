@@ -1,5 +1,4 @@
-const BASE_URL = "http://localhost:8000/api/tasks";
-
+const BASE_URL = "https://task-manager-backend-m1is.onrender.com/api/tasks";
 const taskForm = document.getElementById("taskForm");
 
 const taskGrid = document.getElementById("taskGrid");
